@@ -1084,7 +1084,7 @@ $result	= $object->updateline(
 			$object->date_livraison = $datelivraison;
 			$object->fk_incoterms = GETPOST('incoterm_id', 'int');
 			$object->location_incoterms = GETPOST('location_incoterms', 'alpha');
-			$object->multicurrency_code = GETPOST('multicurrency_code', 'alpha');
+			$object->multicurrency_code = $fourn->multicurrency_code;
 			$object->multicurrency_tx = GETPOST('originmulticurrency_tx', 'int');
 			$object->fk_project       = GETPOST('projectid');
 
